@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.whybox {
+    background-color: #ddd;
+    padding: 20px 0;
+} 
+
+.container {
+    max-width: 1200px;
+    margin: 10px auto;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 10px;
+}
+.card {
+    background-color: white;
+    border: 1px solid darkblue;
+    border-radius: 10px;
+    padding: 10px;
+}
+.card img{
+   margin: 10px 0px 15px 10px;
+}
+h4 {
+    color: #173D7A;
+    font-size: 18px;
+    font-weight: 600;
+    height: 48px;
+    margin-left: 10px;
+    margin-bottom: 12px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+p {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 18px;
+    color: #A2A2A2;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+    ;
+    align-self: auto;
+    margin: 10px 25px 20px 10px;
+}
