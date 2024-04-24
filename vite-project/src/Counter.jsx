@@ -6,7 +6,7 @@ const Counter = () => {
   
     const plus =() => setCount(count + 1);
     const minus =() => setCount(count - 1);
-return (
+ return (
     <div>
         <h1>{count}</h1> 
         <button onClick ={minus}>azalt</button>
