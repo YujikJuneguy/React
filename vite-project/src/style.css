@@ -48,11 +48,15 @@ p {
 
 /* DarkLIghtmode styling */
 
-.dark, .dark * {
+.d ark, .dark * {
     background-color: black;
     color: aliceblue;
 }
 .light, .light *{
     background-color: white;
     color: black;
+}
+ /* Todolist slyte */
+.tdl{
+    margin: 20px;
 }

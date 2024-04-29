@@ -5,7 +5,7 @@ const ShowHide = () => {
     const changeShow =() => setShow(!show);
   return (
     <div>
-      <button onCLick={changeShow}>{show ? "hide" : "show"}</button>
+      <button onClick={changeShow}>{show ? "hide" : "show"}</button>
       <h2>men {show ? "burdayam" : "gizlenmisem"}</h2>
     </div>
   ); 

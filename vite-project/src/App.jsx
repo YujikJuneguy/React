@@ -1,22 +1,18 @@
-import React from 'react';
 import './style.css'
 import Card from './Components/Card';
-import { data } from './data';
+import {data} from './data';
 import Counter from './Counter';
 import ShowHide from './ShowHide';
 import DarkLightMode from './DarkLightMode';
+import React, {useState} from 'react';
+import TodoList from './TodoList';
+import GetData from './Components/GetData';
+
+const App = () => {
  
 
 // ------------------------------- mode changing ----------------------------
-const App = () => {
-    const [mode,setMode] = useState ('light')
-    const changeMode =()=> {
-        if (mode === "dark") {
-            setMode('light')            
-        } else {
-            setMode('dark')            
-        }
-    }
+https://turbo.az/autos/8120613-skoda-octavia
 
     // ------------------------------- first react task (JED whybox) ----------------------------
   return (
@@ -30,18 +26,20 @@ const App = () => {
     
     // ------------------------------- mode changing ----------------------------
 
-    <div className={mode}>
-    <button onClick ={changeMode}>dark</button>
-    <DarkLightMode/>
-    </div>
+    // <div className={mode}>
+    // <button onClick ={changeMode}>{mode === 'dark' ? 'light': 'dark'}</button>
+    // <DarkLightMode/>
+    // </div>
     
     // --------------------------------Counter & Showhide------------------------
-    // <div>            
-    //    <Counter/>  
-    //    <ShowHide/>
-    // </div>
+    <div>            
+       {/* <Counter/>  
+       <ShowHide/> */}
+       {/* <TodoList/> */}
+       <GetData/>
+    </div>
    
-  ) 
-}
+  ) }
+
 
 export default App;
