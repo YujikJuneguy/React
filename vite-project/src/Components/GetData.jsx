@@ -1,17 +1,21 @@
 import axios from 'axios'
-import React from 'react'
+import React, {useEffect,useState} from 'react'
+
 
 const url = 'https://jsonplaceholder.typicode.com/users';
-
-
-const {data} = await axios(url)
 const GetData = () => {
+  const [users,setUsers] = useState([])
+
+  useEffect(() => {
+    axios(url).then(({data}) => {
+      setUsers(data)
+    })
+  },[])
    return (
     <div>
       {
-        data.map(({username,id}) => {
-          return <div key={id} 
-         >
+        users.map(({username,id}) => {
+          return <div key={id}>
             {username}
           </div>
       })

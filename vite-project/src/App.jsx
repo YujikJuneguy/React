@@ -7,6 +7,8 @@ import DarkLightMode from './DarkLightMode';
 import React, {useState} from 'react';
 import TodoList from './TodoList';
 import GetData from './Components/GetData';
+import UserCard from './Components/UserCards/UserCard';
+import RiMo from './Components/RickAndMorty/RiMo';
 
 const App = () => {
  
@@ -36,10 +38,13 @@ https://turbo.az/autos/8120613-skoda-octavia
        {/* <Counter/>  
        <ShowHide/> */}
        {/* <TodoList/> */}
-       <GetData/>
+       {/* <GetData/> */}
+       {/* <UserCard/> */}
+       <RiMo/>
+
     </div>
-   
-  ) }
+  ); 
+}
 
 
 export default App;
