@@ -1,0 +1,13 @@
+* {
+    margin: 20;
+    padding: 20;
+    box-sizing: border-box;
+}
+.dark, .dark * {
+    background-color: black;
+    color: aliceblue;
+}
+.light, .light *{
+    background-color: white;
+    color: black;
+}

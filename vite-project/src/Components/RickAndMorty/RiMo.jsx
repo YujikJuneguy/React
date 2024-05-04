@@ -1,21 +1,29 @@
-import React from 'react'
-import axios from 'axios'
+import axios from "axios";
+import React, { useEffect, useState } from "react";
+// import 'bootstrap/dist/css/bootstrap.css'
 
-const url = 'https://rickandmortyapi.com/api/character/'; 
 
-const{data}= await axios(url)
-const RiMo = () => {
-  return (
-    <div>
-      {
-        data.map(({pages,id})=> {
-            return <div key={id}>
-                {pages}
-            </div>    
-        })
-      }
-    </div>
-  )
+
+const RiMo=() => {
+  const url = 'https://rickandmortyapi.com/api/character/'; 
+const [data,setData] =useState([])
+
+useEffect(() => {
+  (async() => {
+    const {data} = await axios(url)
+    setData(data.results)
+    console.log();
+  })()
+},[])
+
+return (
+  <div>{
+    data.map(({name,id}) => {
+      return <h3 key={id}>{name}</h3>
+    })
+}</div>
+)
 }
+
 
 export default RiMo

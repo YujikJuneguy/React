@@ -3,12 +3,10 @@
     padding: 0;
     box-sizing: border-box;
 }
-
 .whybox {
     background-color: #ddd;
     padding: 20px 0;
 } 
-
 .container {
     max-width: 1200px;
     margin: 10px auto;
@@ -38,25 +36,9 @@ p {
     font-weight: 400;
     font-size: 18px;
     line-height: 18px;
-    color: #A2A2A2;
+    color: #e91212;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
     ;
     align-self: auto;
     margin: 10px 25px 20px 10px;
-}
-
-
-/* DarkLIghtmode styling */
-
-.d ark, .dark * {
-    background-color: black;
-    color: aliceblue;
-}
-.light, .light *{
-    background-color: white;
-    color: black;
-}
- /* Todolist slyte */
-.tdl{
-    margin: 20px;
 }
