@@ -1,0 +1,22 @@
+import React from 'react';
+import { Link } from "react-router-dom";
+
+const Navbar = () => {
+    const links = [
+        { path: '/', title: 'Home' },
+        { path: '/about', title: 'About' },
+        { path: '/contact', title: 'Contact' },
+    ];
+
+    return (
+        <nav>
+            {links.map(({ path, title }) => (
+                <Link key={path} className="" to={path}>
+                    {title}
+                </Link>
+            ))}
+        </nav>
+    );
+}
+
+export default Navbar;

@@ -1,0 +1,14 @@
+nav {
+    background-color: black;
+   height: 50px;
+}
+a {
+   margin-right: 40px;
+   padding-top: 20px;
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+   color: yellow;
+   cursor: pointer;  
+}
+.active {
+    background-color: red;
+}
