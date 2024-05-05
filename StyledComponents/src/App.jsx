@@ -1,27 +1,29 @@
+import styled from 'styled-components';
 import { useState } from 'react'
-import styled from 'styled-components'
 import { TodoList } from './Components/todo-list'
-import { StartTodoList } from './data'
+import { startTodoList } from './data'
+import { Theme } from "./styles/theme";
+
 
 const Title = styled.h1`
-   color:blue;
+  color:  ${({ theme }) => theme.colors.title}
 `
 
 function App() {
-  const [count, setCount] = useState(StartTodoList)
+  const [todos, setTodos] = useState(startTodoList)  
 
   const getOverdueTodos = () => {
     const today = new Date()
-    return todos.filter((todo) =>!todo.isDone && new Date(todo.deadline) < today)
+    return todos.filter((todo) => !todo.isDone && new Date(todo.deadline) < today)
   }
 
   const getActualTodos = () => {
     const today = new Date()
-    return todos.filter((todo) =>!todo.isDone && new Date(todo.deadline) >= today)
+    return todos.filter((todo) => !todo.isDone && new Date(todo.deadline) >= today)
   }
 
-  const getCompleteTodos = () => {
-    return todos.filter((todo) =>!todo.isDone)
+  const getCompletedTodos = () => {
+    return todos.filter((todo) => todo.isDone)
   }
 
   const toggleTodo = (id) => {
@@ -36,26 +38,27 @@ function App() {
   }
 
   return (
-   <div>
-    <h1>Todo List</h1>
-    <TodoList
-    title='Overdue'
-    items={getOverdueTodos()}
-    onToggleTodo={toggleTodo}
-    />
-    <TodoList
-    title='Actual'
-    items={getActualTodos()}
-    onToggleTodo={toggleTodo}
-    />
-    <TodoList
-    title='Completed'
-    items={getCompletedTodos()}
-    onToggleTodo={toggleTodo}
-    />
-    <StartTodoList/>
-   </div>
+    <Theme>
+      <Title>Todo List</Title>
+      <TodoList
+        title='Overdue'
+        items={getOverdueTodos()}
+        onToggleTodo={toggleTodo}
+      />
+      <TodoList
+        title='Actual'
+        items={getActualTodos()}
+        onToggleTodo={toggleTodo}
+      />
+      <TodoList
+        title='Completed'
+        items={getCompletedTodos()}
+        onToggleTodo={toggleTodo}
+      />
+    </Theme>
   )
 }
 
-export default App
+export default App;
+
+

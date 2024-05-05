@@ -1,4 +1,12 @@
 import {TodoItem} from "../todo-item";
+import styled from 'styled-components'
+
+const StyledTodoItem =styled(TodoItem)`
+  margin-bottom:10px;
+  color:  ${({ theme }) => theme.colors.task }
+  
+
+`
 
 export const TodoList = ({title, items, onToggleTodo}) => {
     return (
@@ -7,10 +15,11 @@ export const TodoList = ({title, items, onToggleTodo}) => {
         <ul>
             {
             items.map(todo => (
-                <TodoItem
+                <StyledTodoItem
                 key={todo.id}
                 {...todo}
-                onToggleTodo={onToggleTodo}/>
+                onToggleTodo={onToggleTodo}
+                />
             ))
 }
         </ul>
