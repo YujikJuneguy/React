@@ -1,0 +1,16 @@
+{
+    "menu": [
+      {
+        "id": 1,
+        "name": "Tomato Soup",
+        "description": "Fresh tomatoes, slow-cooked to perfection",
+        "price": "AZN 5"
+      },
+      {
+        "id": 2,
+        "name": "Cheeseburger",
+        "description": "Grilled beef, cheese, lettuce, tomato on a sesame seed bun",
+        "price": "AZN 10"
+      }
+    ]
+  }
