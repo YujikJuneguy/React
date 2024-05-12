@@ -1,12 +1,17 @@
+:root {
+  --primary: #1c1e54;
+}
+
 @font-face {
-    font-family: Poppins;
-    src: url('../Fonts/Poppins/Poppins-Regular.ttf');
-    text-decoration: none;
-
+  font-family: Poppins;
+  src: url("../Fonts/Poppins/Poppins-Regular.ttf");
 }
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  box-sizing: border-box;
 }
+
+
