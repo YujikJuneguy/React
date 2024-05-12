@@ -1,80 +1,109 @@
-.banner  {
-    background-color: var(--primary);  
-    color: white;
-    font-family: Poppins;
-    align-items: center;
-    height: 560px;
+.banner {
+  background-color: var(--primary);
+
+  font-family: Poppins;
+  align-items: center;
+  height: 560px;
 }
 .b {
-    flex-direction: row ; 
-    display: flex;
-    padding: 40px 0;
+  flex-direction: row;
+  display: flex;
+  padding: 40px 0;
 }
-.slogan{
-    font-weight: 600;
-    font-size: 54px;
-    line-height: 74px;
-    color: white;
-    margin-left: 3px;
+.slogan {
+  font-weight: 600;
+  font-size: 54px;
+  line-height: 74px;
+  color: white;
+  margin-left: 3px;
 }
-.subslogan {
-    font-weight: 400;
-    size: 16px;
-    line-height: 28px;
-    width: 562px;
-    height: 56px;
-    opacity: 70%;
-    margin-left: 3px;
-    padding-top: 20px;
-    margin-bottom: 75px;
+.subslogan1 {
+  color: white;
+  font-weight: 400;
+  size: 16px;
+  line-height: 28px;
+  width: 562px;
+  height: 56px;
+  opacity: 70%;
+  margin-left: 3px;
+  padding-top: 20px;
+  margin-bottom: 75px;
 }
 .banner img {
-    width: 100%;
-    margin-right: 200px;
-}
-.button {
-    background-color: #FCD980;
-    width: 230px;
-    height: 64px;
-    color: black;
-    margin-right: 40px;
-    padding: 16px 56px 16px 56px;
-    gap: 10px;
-    border-radius: 41px;
-    opacity: 0px;
+  width: 100%;
+  margin-right: 200px;
 }
 .buttonvsarrow {
-     color: white;
-     width: 138px;
-     height: 28px;
-     top: 586px;
-     left: 430px;
-     gap: 0px;
-     opacity: 0px;
+  color: white;
+  width: 138px;
+  height: 28px;
+  top: 586px;
+  left: 430px;
+  gap: 0px;
+  opacity: 0px;
 }
-.arrow {
-    transform: translateY(2px);
-    margin-right: 250px;
-}
-
-.blackslogan{
-    font-weight: 600;
-    font-size: 54px;
-    line-height: 74px;
-    color: black;
-    margin-left: 3px;
+.arrow1 {
+  transform: translateY(2px);
+  margin-right: 50px;
 }
 .work {
-    font-family: Poppins;
-    font-weight: 600;
-    font-size: 54px;
-    line-height: 74px;
-    color: black;
-    margin-left: 3px;
-    width: 405px;
-    margin-top: 38px;
-    margin-left: 136px;
+  font-family: Poppins;
+  color: black;
+  width: 1600px;
+  height: 661px;
+  margin-top: -38px;
+  background-color: #F4F6FC;
+}
+.slogan2 {
+  width: 405px;
+  margin-left: 75px;
+  font-weight: 900;
+  font-size: 50px;
+  line-height: 74px;
+  padding-top: 120px;
+}
+.subslogan2 {
+  color: black;
+  margin-left: 75px;
+  line-height: 28px;
+  width: 340px;
+  height: 56px;
+  opacity: 70%;
+  padding-top: 20px;
+  margin-bottom: 75px;
+  font-size: 16px;
+  font-weight: 400;
+}
+.getin {
+  color: #2405f2;
+  margin-left: 75px;
+  width: 244px;
+  height: 32px;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 32px;
+  text-align: left;
+}
+.cards{
+    display: inline-block;
+    width: 656px;
+    height: 405px;
+    margin-top: px;
+    margin-left: 300px;
     gap: 0px;
     opacity: 0px;
-    width: 405px;
+}
+.pointer {
+    font-family: Poppins;
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 48px;
+    text-align: left;
+    width: 328px;
+    height: 48px;
+    margin-top: 5px;
+    margin-left: 340px;
+    gap: 0px;
+    opacity: 0px;
+
 }

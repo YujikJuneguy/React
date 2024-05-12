@@ -1,17 +1,24 @@
 :root {
   --primary: #1c1e54;
 }
-
 @font-face {
   font-family: Poppins;
   src: url("../Fonts/Poppins/Poppins-Regular.ttf");
 }
-
 * {
   margin: 0;
   padding: 0;
   text-decoration: none;
   box-sizing: border-box;
 }
-
-
+.button {
+  background-color: #FCD980;
+  width: 230px;
+  height: 64px;
+  color: black;
+  margin-right: 40px;
+  padding: 16px 56px 16px 56px;
+  gap: 10px;
+  border-radius: 41px;
+  opacity: 0px;
+}
