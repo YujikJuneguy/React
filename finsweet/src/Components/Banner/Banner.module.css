@@ -49,17 +49,17 @@
 .work {
   font-family: Poppins;
   color: black;
-  width: 1600px;
   height: 661px;
   background-color: #f4f6fc;
+   display: flex;
+  align-items: center;
+  text-align: center;
 }
+
 .slogan2 {
-  width: 405px;
-  margin-left: 75px;
   font-weight: 900;
   font-size: 50px;
   line-height: 74px;
-  padding-top: 120px;
 }
 .subslogan2 {
   color: black;
@@ -67,7 +67,7 @@
   line-height: 28px;
   width: 340px;
   height: 56px;
-  opacity: 70%;
+  opacity: 0.7;
   padding-top: 20px;
   margin-bottom: 75px;
   font-size: 16px;
@@ -88,12 +88,14 @@
   margin-top: -35px;
 }
 .cards {
-  width: 656px;
-  margin-top: -220px;
-  margin-left: 800px;
-  gap: 0px;
-  opacity: 0px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start; 
+  gap: 20px;
 }
+
+
+
 .arrow2 {
   color: #2405f2;
   width: 244px;
@@ -102,5 +104,5 @@
   font-weight: 400;
   line-height: 32px;
   margin: -35px 0px 0px -110px;
-  justify-content: flex-start;
+ 
 }

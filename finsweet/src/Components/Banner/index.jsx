@@ -24,35 +24,26 @@ const Banner = ({ title, description, image, button, viewPricing = false }) => {
           </div>
         </div>
       </div>
+
       {/* How we work */}
-      <div className={styles.work}>
-        <p className={styles.slogan2}>How we work</p>
-        <p className={styles.subslogan2}>
-          {" "}
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor.
-        </p>
-        <Link className={styles.getin} to="/">
-          <h6>Get in touch with us</h6>{" "}
-          <HiOutlineArrowNarrowRight className={styles.arrow2} />
-        </Link>
-        <div className={styles.cards}>
-          {/* <Card
-            title="Development"
-            description="Euismod faucibus turpis eu gravida mi. Pellentesque et velit aliquam."
-          />
-          <Card
-            title="Marketing"
-            description="Euismod faucibus turpis eu gravida mi. Pellentesque et velit aliquam."
-          />
-          <Card
-            title="Design"
-            description="Euismod faucibus turpis eu gravida mi. Pellentesque et velit aliquam."
-          /> */}
-          <img src="public/Cards.svg" alt="" />
+      <div>
+        <div className={styles.work}>
+          <p className={styles.slogan2}>How we work</p>
+          <p className={styles.subslogan2}>
+            {" "}
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor.
+          </p>
+          <Link className={styles.getin} to="/">
+            <h6>Get in touch with us</h6>{" "}
+            <HiOutlineArrowNarrowRight className={styles.arrow2} />
+          </Link>
+          <div className={styles.cards}>
+            <img src="public/Cards.svg" alt="" />
+          </div>
         </div>
       </div>
-      {/*  */}
+    
     </div>
   );
 };
