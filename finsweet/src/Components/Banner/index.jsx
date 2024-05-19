@@ -81,10 +81,3 @@ const Banner = ({ title, description, image, button, viewPricing = false }) => {
 };
 
 export default Banner;
-
-{
-  /* <h3>Strategy</h3>
-<h3>Design</h3>
-<h3>Wireframing</h3>
-<h3>Development</h3> */
-}
