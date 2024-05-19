@@ -1,6 +1,5 @@
 .banner {
   background-color: var(--primary);
-
   font-family: Poppins;
   align-items: center;
   height: 560px;
@@ -31,7 +30,6 @@
 }
 .banner img {
   width: 100%;
-  margin-right: 200px;
 }
 .buttonvsarrow {
   color: white;
@@ -46,64 +44,94 @@
   transform: translateY(2px);
   margin-right: 50px;
 }
-.work {
+.workAndCategories {
   font-family: Poppins;
   color: black;
-  width: 1600px;
-  height: 661px;
-  margin-top: -38px;
-  background-color: #F4F6FC;
+  background-color: #f4f6fc;
+  display: flex;
+  padding: 50px;
 }
+
+.workAndCategories .left {
+  width: 40%;
+  padding: 20px;
+}
+
+.workAndCategories .right {
+  width: 60%;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.workAndCategories .right .rigthSubDiv {
+  width: 50%;
+  padding: 10px;
+  color: #282938;
+}
+
+.workAndCategories .right .rigthSubDiv h2 {
+  font-size: 32px;
+}
+
+.workAndCategories .right .rigthSubDiv p{
+  font-size: 16px;
+}
+
 .slogan2 {
-  width: 405px;
-  margin-left: 75px;
   font-weight: 900;
   font-size: 50px;
   line-height: 74px;
-  padding-top: 120px;
 }
 .subslogan2 {
   color: black;
-  margin-left: 75px;
   line-height: 28px;
-  width: 340px;
-  height: 56px;
   opacity: 70%;
-  padding-top: 20px;
-  margin-bottom: 75px;
   font-size: 16px;
+  margin: 20px 0;
   font-weight: 400;
 }
 .getin {
   color: #2405f2;
-  margin-left: 75px;
-  width: 244px;
-  height: 32px;
   font-size: 24px;
   font-weight: 400;
   line-height: 32px;
-  text-align: left;
+  display: block;
 }
-.cards{
-    display: inline-block;
-    width: 656px;
-    height: 405px;
-    margin-top: px;
-    margin-left: 300px;
-    gap: 0px;
-    opacity: 0px;
+.cards {
+  display: inline-block;
+  margin-top: px;
+  margin-left: 300px;
+  gap: 0px;
+  opacity: 0px;
 }
 .pointer {
-    font-family: Poppins;
-    font-size: 32px;
-    font-weight: 500;
-    line-height: 48px;
-    text-align: left;
-    width: 328px;
-    height: 48px;
-    margin-top: 5px;
-    margin-left: 340px;
-    gap: 0px;
-    opacity: 0px;
+  font-family: Poppins;
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 48px;
+  text-align: left;
+  margin-top: 5px;
+  gap: 0px;
+  opacity: 0px;
+}
 
+
+
+@media (max-width:992px) {
+  .workAndCategories {
+    flex-wrap: wrap;
+  }
+
+  .workAndCategories .left,
+  .workAndCategories .right {
+    width: 100%;
+    padding: 10px;
+  }
+}
+
+@media  (max-width:768px) {
+  .workAndCategories .right .rigthSubDiv{
+    width: 100%;
+  }
 }
